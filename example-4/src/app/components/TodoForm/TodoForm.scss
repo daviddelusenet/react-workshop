@@ -1,3 +1,35 @@
-.TodoForm {
+@import 'shared/shared';
 
+.TodoForm {
+  display: flex;
+  max-width: 460px;
+  margin: 0 auto 10px;
+  padding: 60px 30px 0;
+  flex-wrap: nowrap;
+}
+
+.TodoForm__input {
+  display: block;
+  height: 40px;
+  margin: 0 10px 10px 0;
+  padding: 0 10px;
+  font-size: rem-calc(16px);
+  line-height: rem-calc(40px);
+  border: 2px solid $c-black;
+  outline: none;
+  flex: 1 1 auto;
+}
+
+.TodoForm__button {
+  display: block;
+  height: 40px;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: rem-calc(16px);
+  line-height: rem-calc(40px);
+  color: $c-white;
+  border: 0;
+  outline: none;
+  background-color: $c-black;
+  flex: 0 0 auto;
 }
