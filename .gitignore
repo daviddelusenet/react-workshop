@@ -1,0 +1,9 @@
+.idea
+node_modules
+
+example-*/dist/css/**
+example-*/dist/js/**
+example-*/*.log
+example-*/vendor
+example-*/composer.lock
+example-*/**/config.php
