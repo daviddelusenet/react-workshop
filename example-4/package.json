@@ -1,0 +1,38 @@
+{
+  "name": "react-workshop",
+  "version": "1.0.0",
+  "description": "A workshop about React",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:dev",
+    "build:dev": "BABEL_ENV=dev node_modules/.bin/webpack-dev-server --env=dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daviddelusenet/react-workshop"
+  },
+  "author": "David de Lusenet",
+  "homepage": "",
+  "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
+    "postcss-loader": "^2.0.8",
+    "postcss-scss": "^1.0.2",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "babel-plugin-react-css-modules": "^3.3.2",
+    "babel-polyfill": "^6.23.0",
+    "foundation-sites": "^6.4.4-rc1",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  }
+}
