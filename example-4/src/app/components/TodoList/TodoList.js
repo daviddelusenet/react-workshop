@@ -6,7 +6,6 @@ const TodoList = (props) => (
     {props.todos.map(todo => (
       <li styleName="TodoList__item" key={todo.id}>{todo.text}</li>
     ))}
-    <li styleName="TodoList__item">Wow zo sick</li>
   </ul>
 );
 
