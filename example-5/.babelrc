@@ -1,0 +1,23 @@
+{
+  "presets": [
+    ["env", {"modules": false}], // webpack understands the native import syntax and uses it for tree shaking
+    "react" // transpile React components to JavaScript
+  ],
+  "env": {
+    "dev": {
+      "plugins": [
+        ["react-css-modules", {
+          "context": "./src",
+          "generateScopedName": "[local]___[hash:base64:5]",
+          "filetypes": {
+            ".scss": {
+              "syntax": "postcss-scss"
+            }
+          }
+        }]
+      ]
+    },
+    "prod": {
+    }
+  }
+}
