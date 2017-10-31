@@ -1,0 +1,21 @@
+@import 'shared/shared';
+
+.TodoListItem {
+  display: flex;
+  list-style: disc;
+  list-style-position: inside;
+  font-family: $ff-source-serif;
+  font-size: rem-calc(18px);
+  flex-wrap: nowrap;
+}
+
+.TodoListItem__text {
+  flex: 1 1 auto;
+}
+
+.TodoListItem__delete {
+  cursor: pointer;
+  font-family: $ff-source-sans;
+  font-weight: bold;
+  flex: 0 0 auto;
+}
