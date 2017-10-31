@@ -1,0 +1,15 @@
+body {
+  position: relative;
+  font-family: $ff-source-sans;
+  line-height: 1.5;
+  background-color: $c-seashell;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// scss-lint:disable all
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-text-size-adjust: 100%;
+}
