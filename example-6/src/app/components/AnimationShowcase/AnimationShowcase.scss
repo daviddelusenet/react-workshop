@@ -1,0 +1,38 @@
+@import 'shared/shared';
+
+.AnimationShowcase {
+  max-width: 960px;
+  margin: 0 auto 10px;
+  padding: 60px 30px 0;
+}
+
+.AnimationShowcase__example-element {
+  max-width: 400px;
+  height: 200px;
+  margin: 0 auto 30px;
+  background-color: #FFCDD2;
+}
+
+.AnimationShowcase__button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: 40px;
+  margin: 0 auto 10px;
+  padding: 0 15px;
+  cursor: pointer;
+  font-size: rem-calc(16px);
+  line-height: rem-calc(40px);
+  color: $c-white;
+  border: 0;
+  outline: none;
+  background-color: $c-black;
+}
+
+.AnimationShowcase__reset {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  cursor: pointer;
+}

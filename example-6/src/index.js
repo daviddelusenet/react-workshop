@@ -2,6 +2,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+// Import shared libraries
+import 'gsap';
+
 // Import shared styles
 import './styles/global/global.scss';
 
