@@ -5,4 +5,6 @@
 - **Example 3:** *Stateless vs Statefull Components*
 - **Example 4:** *Adding Some Styling*
 - **Example 5:** *React Component Lifecycle Basics*
-- **Example 6:**
+- **Example 6:** *Refs and the DOM*
+- **Example 7:** *TBD*
+- **Example 8:** *TBD*
