@@ -7,4 +7,4 @@
 - **Example 5:** *React Component Lifecycle Basics*
 - **Example 6:** *Refs and the DOM*
 - **Example 7:** *React Router*
-- **Example 8:** *The Future According To de Lusenet: Styled Components*
+- **Example 8:** *The Future According To David: Styled Components*
