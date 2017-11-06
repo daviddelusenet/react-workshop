@@ -10,7 +10,8 @@ module.exports = {
   devServer: {
     contentBase: resolve(__dirname, './dist'),
     publicPath: '/js/',
-    port: 3000
+    port: 3000,
+    historyApiFallback: true
   },
   output: {
     path: resolve(__dirname, './dist/js'),
@@ -18,7 +19,7 @@ module.exports = {
     publicPath: '/js/'
   },
   resolve: {
-    modules: ['node_modules', 'src/app/components']
+    modules: ['node_modules', 'src/app/components', 'src/app/pages']
   },
   module: {
     rules: [
