@@ -1,8 +1,8 @@
-import React from 'react';
+import React         from 'react';
 import './TodoList.scss';
 
 // Import child components
-import TodoListItem from './TodoListItem/TodoListItem';
+import TodoListItem  from './TodoListItem/TodoListItem';
 
 class TodoList extends React.Component {
   constructor(props) {
