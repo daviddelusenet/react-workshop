@@ -1,7 +1,7 @@
-import React              from 'react';
+import React    from 'react';
 
 // Import child components
-import AnimationShowcase  from 'AnimationShowcase/AnimationShowcase';
+import Routing  from './Routing';
 
 class App extends React.Component {
   constructor(props) {
@@ -10,7 +10,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <AnimationShowcase />
+      <Routing />
     );
   }
 }

@@ -1,0 +1,19 @@
+@import 'shared/shared';
+
+.User {
+  display: flex;
+  background-color: blue;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.User__avatar {
+  display: block;
+  width: 200px;
+  flex: 0 0 auto;
+}
+
+.User__name {
+  font-size: rem-calc(48px);
+  flex: 1 1 auto;
+}
