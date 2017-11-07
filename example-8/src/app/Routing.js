@@ -26,7 +26,7 @@ class Routing extends React.Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/user/:username" render={props => (
-            <User {...props} />
+            <User {...props} users={this.props.users} />
           )} />
         </div>
       </Router>

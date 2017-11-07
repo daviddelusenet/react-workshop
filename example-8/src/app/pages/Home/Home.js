@@ -1,5 +1,9 @@
-import React from 'react';
-import './Home.scss';
+import React      from 'react';
+import PropTypes  from 'prop-types';
+
+// Import child components
+import Page       from 'Page/Page';
+import Paragraph  from 'Paragraph/Paragraph';
 
 class Home extends React.Component {
   constructor(props) {
@@ -8,9 +12,9 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div className="Page">
-        <div className="Page__inner" styleName="Home">This is the Home page, so amazing!</div>
-      </div>
+      <Page type="home" title="This is the Home page, so amazing">
+        <Paragraph text="We did it!" />
+      </Page>
     );
   }
 }

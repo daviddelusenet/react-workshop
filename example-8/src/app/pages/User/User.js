@@ -1,5 +1,10 @@
-import React from 'react';
-import './User.scss';
+import React            from 'react';
+import PropTypes        from 'prop-types';
+
+// Import child components
+import Page             from 'Page/Page';
+import Paragraph        from 'Paragraph/Paragraph';
+import UserInformation  from 'UserInformation/UserInformation';
 
 class User extends React.Component {
   constructor(props) {
@@ -7,53 +12,31 @@ class User extends React.Component {
   }
 
   render() {
-    const Users = [{
-      "name": "David de Lusenet",
-      "avatar": "/img/avatars/david-l.png",
-      "url": "david-l"
-    }, {
-      "name": "Sebastian Kersten",
-      "avatar": "/img/avatars/sebastian-k.png",
-      "url": "sebastian-k"
-    }, {
-      "name": "Heleen Emanuel",
-      "avatar": "/img/avatars/heleen-e.png",
-      "url": "heleen-e"
-    }, {
-      "name": "Ruben Nascimento",
-      "avatar": "/img/avatars/ruben-n.png",
-      "url": "ruben-n"
-    }, {
-      "name": "Ruben Zijlstra",
-      "avatar": "/img/avatars/ruben-z.png",
-      "url": "ruben-z"
-    }, {
-      "name": "Eddy Koek",
-      "avatar": "/img/avatars/eddy-k.png",
-      "url": "eddy-k"
-    }, {
-      "name": "Christiaan Mutschelknauss",
-      "avatar": "/img/avatars/christiaan-m.png",
-      "url": "christiaan-m"
-    }];
-
     let userData;
 
-    for (let user of Users) {
+    for (let user of this.props.users) {
       if (user.url === this.props.match.params.username) {
         userData = user;
       }
     }
 
     return (
-      <div className="Page">
-        <div className="Page__inner" styleName="User">
-          <img styleName="User__avatar" src={userData.avatar} />
-          <p styleName="User__name">{userData.name}</p>
-        </div>
-      </div>
+      <Page type="user">
+        <UserInformation {...userData} />
+        <Paragraph text="Of course it's possible to have multiple components here" />
+      </Page>
     );
   }
 }
+
+User.propTypes = {
+  users: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired
+    })
+  )
+};
 
 export default User;
