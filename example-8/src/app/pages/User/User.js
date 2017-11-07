@@ -7,7 +7,6 @@ class User extends React.Component {
   }
 
   render() {
-    console.log(this.props);
     const Users = [{
       "name": "David de Lusenet",
       "avatar": "/img/avatars/david-l.png",
