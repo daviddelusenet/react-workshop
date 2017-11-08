@@ -1,9 +1,13 @@
 import React      from 'react';
 import PropTypes  from 'prop-types';
-import './Paragraph.scss';
+import styled     from 'styled-components';
+
+const ParagraphElement = styled.p`
+  font-size: 18px;
+`;
 
 const Paragraph = (props) => (
-  <p styleName="Paragraph">{props.text}</p>
+  <ParagraphElement>{props.text}</ParagraphElement>
 );
 
 Paragraph.propTypes = {
