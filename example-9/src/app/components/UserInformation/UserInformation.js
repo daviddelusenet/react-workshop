@@ -17,7 +17,7 @@ const UserInformationAvatar = styled.img`
 
 const UserInformationName = styled.p`
   padding: 0 0 0 30px;
-  font-size: rem-calc(48px);
+  font-size: 48px;
   flex: 1 1 auto;
 `;
 
