@@ -1,7 +1,28 @@
 import React       from 'react';
 import PropTypes   from 'prop-types';
 import ClassNames  from 'classnames';
-import Styles      from './Page.scss';
+import styled      from 'styled-components';
+
+const PageWrapper = styled.div`
+  padding: 0 0 0 300px;
+`;
+
+const PageWrapperInner = styled.div`
+  padding: 30px;
+  background-color: ${props => {
+    if (props.type === 'about') {
+      return '#fff';
+    } else if (props.type === 'home') {
+      return 'red';
+    } else {
+      return 'blue';
+    }
+  }}
+`;
+
+const PageTitle = styled.h1`
+  font-size: 40px;
+`;
 
 class Page extends React.Component {
   constructor(props) {
@@ -9,20 +30,15 @@ class Page extends React.Component {
   }
 
   render() {
-    const PageInnerClasses = ClassNames({
-      [Styles['Page__inner']]: true,
-      [Styles[`Page__inner--${this.props.type}`]]: this.props.type
-    });
-
     return (
-      <div styleName="Page">
-        <div className={PageInnerClasses}>
+      <PageWrapper>
+        <PageWrapperInner type={this.props.type}>
           {this.props.title &&
-            <h1 styleName="Page__title">{this.props.title}</h1>
+            <PageTitle>{this.props.title}</PageTitle>
           }
           {this.props.children}
-        </div>
-      </div>
+        </PageWrapperInner>
+      </PageWrapper>
     );
   }
 }
