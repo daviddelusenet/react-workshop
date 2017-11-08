@@ -5,17 +5,6 @@
   ],
   "env": {
     "dev": {
-      "plugins": [
-        ["react-css-modules", {
-          "context": "./src",
-          "generateScopedName": "[local]___[hash:base64:5]",
-          "filetypes": {
-            ".scss": {
-              "syntax": "postcss-scss"
-            }
-          }
-        }]
-      ]
     },
     "prod": {
     }

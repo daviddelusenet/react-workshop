@@ -1,6 +1,5 @@
 import React       from 'react';
 import PropTypes   from 'prop-types';
-import ClassNames  from 'classnames';
 import styled      from 'styled-components';
 
 const PageWrapper = styled.div`
