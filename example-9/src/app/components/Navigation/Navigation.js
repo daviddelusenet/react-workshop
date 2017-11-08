@@ -1,6 +1,39 @@
 import React        from 'react';
 import { NavLink }  from 'react-router-dom'
-import Styles       from './Navigation.scss';
+import styled       from 'styled-components';
+
+const NavigationList = styled.ul`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding: 30px;
+  background-color: #000;
+`;
+
+const NavigationListItem = styled.li`
+  display: block;
+`;
+
+const NavigationSectionTitle = styled.p`
+  display: block;
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: #fff;
+`;
+
+const NavigationLink = styled(NavLink).attrs({
+  activeClassName: 'active'
+})`
+  display: block;
+  text-decoration: none;
+  color: #fff;
+
+  &.active {
+    text-decoration: underline;
+  }
+`;
 
 class Navigation extends React.Component {
   constructor(props) {
@@ -9,38 +42,38 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <ul styleName="Navigation">
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/" activeClassName={Styles['Navigation__link--is-active']}>Home</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/about" activeClassName={Styles['Navigation__link--is-active']}>About</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <p styleName="Navigation__section-title">Users</p>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/user/christiaan-m" activeClassName={Styles['Navigation__link--is-active']}>Christiaan M</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/user/david-l" activeClassName={Styles['Navigation__link--is-active']}>David L</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/user/eddy-k" activeClassName={Styles['Navigation__link--is-active']}>Eddy K</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/user/heleen-e" activeClassName={Styles['Navigation__link--is-active']}>Heleen E</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/user/ruben-n" activeClassName={Styles['Navigation__link--is-active']}>Ruben N</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/user/ruben-z" activeClassName={Styles['Navigation__link--is-active']}>Ruben Z</NavLink>
-        </li>
-        <li styleName="Navigation__list-item">
-          <NavLink styleName="Navigation__link" exact to="/user/sebastian-k" activeClassName={Styles['Navigation__link--is-active']}>Sebastian K</NavLink>
-        </li>
-      </ul>
+      <NavigationList>
+        <NavigationListItem>
+          <NavigationLink exact to="/">Home</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/about" >About</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationSectionTitle>Users</NavigationSectionTitle>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/user/christiaan-m" >Christiaan M</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/user/david-l" >David L</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/user/eddy-k" >Eddy K</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/user/heleen-e" >Heleen E</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/user/ruben-n" >Ruben N</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/user/ruben-z" >Ruben Z</NavigationLink>
+        </NavigationListItem>
+        <NavigationListItem>
+          <NavigationLink exact to="/user/sebastian-k" >Sebastian K</NavigationLink>
+        </NavigationListItem>
+      </NavigationList>
     );
   }
 }
