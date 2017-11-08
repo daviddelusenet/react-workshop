@@ -1,6 +1,25 @@
 import React      from 'react';
 import PropTypes  from 'prop-types';
-import './UserInformation.scss';
+import styled     from 'styled-components';
+
+const UserInformationWrapper = styled.div`
+  display: flex;
+  margin: 0 0 50px;
+  flex-wrap: nowrap;
+  align-items: center;
+`;
+
+const UserInformationAvatar = styled.img`
+  display: block;
+  width: 200px;
+  flex: 0 0 auto;
+`;
+
+const UserInformationName = styled.p`
+  padding: 0 0 0 30px;
+  font-size: rem-calc(48px);
+  flex: 1 1 auto;
+`;
 
 class UserInformation extends React.Component {
   constructor(props) {
@@ -9,10 +28,10 @@ class UserInformation extends React.Component {
 
   render() {
     return (
-      <div styleName="UserInformation">
-        <img styleName="UserInformation__avatar" src={this.props.avatar} />
-        <p styleName="UserInformation__name">{this.props.name}</p>
-      </div>
+      <UserInformationWrapper>
+        <UserInformationAvatar src={this.props.avatar} />
+        <UserInformationName>{this.props.name}</UserInformationName>
+      </UserInformationWrapper>
     );
   }
 }
