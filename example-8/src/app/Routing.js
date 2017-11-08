@@ -1,4 +1,5 @@
 import React       from 'react';
+import PropTypes   from 'prop-types';
 import {
   BrowserRouter as Router,
   Route
@@ -33,5 +34,15 @@ class Routing extends React.Component {
     );
   }
 }
+
+Routing.propTypes = {
+  users: PropTypes.arrayOf(
+    PropTypes.shape({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired
+    })
+  )
+};
 
 export default Routing;
