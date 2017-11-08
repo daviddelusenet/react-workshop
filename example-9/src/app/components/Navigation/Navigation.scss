@@ -1,0 +1,32 @@
+@import 'shared/shared';
+
+.Navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  padding: 30px;
+  background-color: $c-black;
+}
+
+.Navigation__list-item {
+  display: block;
+}
+
+.Navigation__section-title {
+  display: block;
+  margin: 20px 0 0;
+  font-weight: bold;
+  color: $c-white;
+}
+
+.Navigation__link {
+  display: block;
+  text-decoration: none;
+  color: $c-white;
+}
+
+.Navigation__link--is-active {
+  text-decoration: underline;
+}

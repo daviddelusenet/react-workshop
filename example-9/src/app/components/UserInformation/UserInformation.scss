@@ -1,0 +1,20 @@
+@import 'shared/shared';
+
+.UserInformation {
+  display: flex;
+  margin: 0 0 50px;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.UserInformation__avatar {
+  display: block;
+  width: 200px;
+  flex: 0 0 auto;
+}
+
+.UserInformation__name {
+  padding: 0 0 0 30px;
+  font-size: rem-calc(48px);
+  flex: 1 1 auto;
+}
