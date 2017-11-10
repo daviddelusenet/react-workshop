@@ -2,7 +2,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Import shared styles
+// Import global styles
 import './styles/global/global.scss';
 
 // Import application
