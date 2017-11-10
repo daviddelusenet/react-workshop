@@ -2,25 +2,12 @@ import React       from 'react';
 import PropTypes   from 'prop-types';
 import styled      from 'styled-components';
 
+// Import child components
+import PageTitle         from './PageTitle/PageTitle';
+import PageWrapperInner  from './PageWrapperInner/PageWrapperInner';
+
 const PageWrapper = styled.div`
   padding: 0 0 0 300px;
-`;
-
-const PageWrapperInner = styled.div`
-  padding: 30px;
-  background-color: ${props => {
-    if (props.type === 'about') {
-      return '#fff';
-    } else if (props.type === 'home') {
-      return 'red';
-    } else {
-      return 'blue';
-    }
-  }}
-`;
-
-const PageTitle = styled.h1`
-  font-size: 40px;
 `;
 
 class Page extends React.Component {
@@ -33,7 +20,7 @@ class Page extends React.Component {
       <PageWrapper>
         <PageWrapperInner type={this.props.type}>
           {this.props.title &&
-            <PageTitle>{this.props.title}</PageTitle>
+            <PageTitle text={this.props.title} />
           }
           {this.props.children}
         </PageWrapperInner>
