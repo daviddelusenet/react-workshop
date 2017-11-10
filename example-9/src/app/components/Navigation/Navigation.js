@@ -1,6 +1,10 @@
 import React        from 'react';
-import { NavLink }  from 'react-router-dom'
 import styled       from 'styled-components';
+
+// Import child components
+import NavigationLink          from './NavigationLink/NavigationLink';
+import NavigationListItem      from './NavigationListItem/NavigationListItem';
+import NavigationSectionTitle  from './NavigationSectionTitle/NavigationSectionTitle';
 
 const NavigationList = styled.ul`
   position: fixed;
@@ -10,29 +14,6 @@ const NavigationList = styled.ul`
   height: 100%;
   padding: 30px;
   background-color: #000;
-`;
-
-const NavigationListItem = styled.li`
-  display: block;
-`;
-
-const NavigationSectionTitle = styled.p`
-  display: block;
-  margin: 20px 0 0;
-  font-weight: bold;
-  color: #fff;
-`;
-
-const NavigationLink = styled(NavLink).attrs({
-  activeClassName: 'active'
-})`
-  display: block;
-  text-decoration: none;
-  color: #fff;
-
-  &.active {
-    text-decoration: underline;
-  }
 `;
 
 class Navigation extends React.Component {
@@ -53,25 +34,25 @@ class Navigation extends React.Component {
           <NavigationSectionTitle>Users</NavigationSectionTitle>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/christiaan-m" >Christiaan M</NavigationLink>
+          <NavigationLink exact to="/user/christiaan-m">Christiaan M</NavigationLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/david-l" >David L</NavigationLink>
+          <NavigationLink exact to="/user/david-l">David L</NavigationLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/eddy-k" >Eddy K</NavigationLink>
+          <NavigationLink exact to="/user/eddy-k">Eddy K</NavigationLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/heleen-e" >Heleen E</NavigationLink>
+          <NavigationLink exact to="/user/heleen-e">Heleen E</NavigationLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/ruben-n" >Ruben N</NavigationLink>
+          <NavigationLink exact to="/user/ruben-n">Ruben N</NavigationLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/ruben-z" >Ruben Z</NavigationLink>
+          <NavigationLink exact to="/user/ruben-z">Ruben Z</NavigationLink>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/sebastian-k" >Sebastian K</NavigationLink>
+          <NavigationLink exact to="/user/sebastian-k">Sebastian K</NavigationLink>
         </NavigationListItem>
       </NavigationList>
     );
