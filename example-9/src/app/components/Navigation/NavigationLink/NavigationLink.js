@@ -16,7 +16,7 @@ const StyledNavigationLink = styled(NavLink).attrs({
 `;
 
 const NavigationLink = (props) => (
-  <StyledNavigationLink {...props}>{props.children}</StyledNavigationLink>
+  <StyledNavigationLink exact={props.exact} to={props.to}>{props.children}</StyledNavigationLink>
 );
 
 NavigationLink.propTypes = {

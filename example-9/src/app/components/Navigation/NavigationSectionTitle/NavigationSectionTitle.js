@@ -2,7 +2,7 @@ import React        from 'react';
 import PropTypes    from 'prop-types';
 import styled       from 'styled-components';
 
-const navigationSectionTitle = styled.p`
+const StyledNavigationSectionTitle = styled.p`
   display: block;
   margin: 20px 0 0;
   font-weight: bold;
@@ -10,11 +10,11 @@ const navigationSectionTitle = styled.p`
 `;
 
 const NavigationSectionTitle = (props) => (
-  <navigationSectionTitle>{props.children}</navigationSectionTitle>
+  <StyledNavigationSectionTitle>{props.children}</StyledNavigationSectionTitle>
 );
 
 NavigationSectionTitle.propTypes = {
-  text: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired
 };
 
 export default NavigationSectionTitle;
