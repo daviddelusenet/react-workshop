@@ -10,11 +10,11 @@ const StyledNavigationSectionTitle = styled.p`
 `;
 
 const NavigationSectionTitle = (props) => (
-  <StyledNavigationSectionTitle>{props.children}</StyledNavigationSectionTitle>
+  <StyledNavigationSectionTitle>{props.text}</StyledNavigationSectionTitle>
 );
 
 NavigationSectionTitle.propTypes = {
-  children: PropTypes.string.isRequired
+  text: PropTypes.string.isRequired
 };
 
 export default NavigationSectionTitle;

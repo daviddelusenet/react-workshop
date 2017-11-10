@@ -31,7 +31,7 @@ class Navigation extends React.Component {
           <NavigationLink exact to="/about" text="About" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationSectionTitle>Users</NavigationSectionTitle>
+          <NavigationSectionTitle text="Users" />
         </NavigationListItem>
         <NavigationListItem>
           <NavigationLink exact to="/user/christiaan-m" text="Christiaan M" />
