@@ -25,34 +25,34 @@ class Navigation extends React.Component {
     return (
       <NavigationList>
         <NavigationListItem>
-          <NavigationLink exact to="/">Home</NavigationLink>
+          <NavigationLink exact to="/" text="Home" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/about" >About</NavigationLink>
+          <NavigationLink exact to="/about" text="About" />
         </NavigationListItem>
         <NavigationListItem>
           <NavigationSectionTitle>Users</NavigationSectionTitle>
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/christiaan-m">Christiaan M</NavigationLink>
+          <NavigationLink exact to="/user/christiaan-m" text="Christiaan M" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/david-l">David L</NavigationLink>
+          <NavigationLink exact to="/user/david-l" text="David L" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/eddy-k">Eddy K</NavigationLink>
+          <NavigationLink exact to="/user/eddy-k" text="Eddy K" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/heleen-e">Heleen E</NavigationLink>
+          <NavigationLink exact to="/user/heleen-e" text="Heleen E" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/ruben-n">Ruben N</NavigationLink>
+          <NavigationLink exact to="/user/ruben-n" text="Ruben N" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/ruben-z">Ruben Z</NavigationLink>
+          <NavigationLink exact to="/user/ruben-z" text="Ruben Z" />
         </NavigationListItem>
         <NavigationListItem>
-          <NavigationLink exact to="/user/sebastian-k">Sebastian K</NavigationLink>
+          <NavigationLink exact to="/user/sebastian-k" text="Sebastian K" />
         </NavigationListItem>
       </NavigationList>
     );

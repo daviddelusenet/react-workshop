@@ -16,11 +16,13 @@ const StyledNavigationLink = styled(NavLink).attrs({
 `;
 
 const NavigationLink = (props) => (
-  <StyledNavigationLink exact={props.exact} to={props.to}>{props.children}</StyledNavigationLink>
+  <StyledNavigationLink exact={props.exact} to={props.to}>{props.text}</StyledNavigationLink>
 );
 
 NavigationLink.propTypes = {
-  children: PropTypes.string.isRequired
+  exact: PropTypes.bool,
+  text: PropTypes.string.isRequired,
+  to: PropTypes.string.isRequired
 };
 
 export default NavigationLink;
