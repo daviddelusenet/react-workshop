@@ -42,6 +42,28 @@ React has a lot of advantages but also some disadvantages. Let's go through some
 
   React solves this issue by using the Virtual DOM to update the DOM. The Virtual DOM is a copy of the DOM which React uses to compare to the *normal* DOM. When something in a React component is changed the component will be marked *dirty*. This will trigger the update part of the component lifecycle which eventually will update the Virtual DOM. When this is done, the Virtual DOM gets compared to the DOM and the *normal* DOM will copy all the changes to the Virtual DOM.
 
+## React disadvantages
+
+As mentioned before, React also has some disadvantages. Let's take a closer look at some of them.
+
+- **High pace of development**
+
+ React is still under development. This means as a developer working with React you have to keep yourself up to date with the latest changes to the React codebase. 
+ 
+ Besides the constantly evolving React codebase a lot of the tools you will use in combination with React (like [React Router](https://github.com/ReactTraining/react-router) and [Redux](https://github.com/reactjs/redux)) are also still under development. 
+ 
+ So as a developer there's a lot of stuff you need to keep yourself up to date on.
+ 
+- **Not suitable for every type of project**
+ 
+  Ofcourse it's possible to build everything you want (and more) with React. However, in some cases this isn't the best decision.
+  
+  For example, React isn't good with complex animations. So if your project will contain a lot of these it might not be the best choice to go with React.
+  
+- **Learning curve can be steep**
+
+  When you don't have a lot of previous experience with JavaScript, Webpack and/or ES6 features it might be hard to get into React.
+
 ## Workshop contents
 
 - **Example 1:** *Hello World*
