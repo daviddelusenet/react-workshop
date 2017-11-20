@@ -4,11 +4,33 @@ This workshop is meant for people with (almost) no previous React experience. Be
 
 ## Introduction into the React galaxy
 
-React's website describes React as '*A JavaScript library for building user interfaces*'. With React it's possible to develop JavaScript web applications really fast. 
+React's website describes React as 
 
-React is component based and uses the [JSX](https://jsx.github.io/) language to define them. Also it uses ES6 which you need to compile back to ES5 when you want to use your code in a production environment.
+> A JavaScript library for building user interfaces
+
+With React it's possible to develop JavaScript web applications really fast. 
+
+React is component based and uses the [JSX](https://jsx.github.io/) language to define these components. Also it uses ES6 which you need to compile back to ES5 when you want to use your code in a production environment.
 
 React has a lot of advantages but also some disadvantages. Let’s go through some of the advantages first.
+
+**React makes it easy to reuse code**
+
+Since React is component based it's quite easy to reuse a component, especially when you use a pattern like [this](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
+
+**React is a open-source library**
+
+Open-source projects have a lot of benefits. For example, it's easier for the community to build additional tools. Also the quality of the projects code itself will be good since there are a lot of open-source contributors working on the project.
+
+**React has a big community**
+
+React is the most popular JavaScript library at the moment. This means the React community is really big which leads to a lot of questions/tutorials online. When you encounter a problem during your React development you can probably find the answer to your problem on Stack Overflow (or somewhere else on Google).
+
+**React uses a lot of JavaScript functionality but doesn't force you to use it aswell**
+
+As mentioned before, React uses JSX and ES6. This isn't mandatory tho. If you don't want to use JSX then don't. The same goes for ES6 since there's also a ES5 version of React.
+
+Besides all of this, React uses a lot of navite JavaScript functionality. So that means when you're getting better with React you're also getting better with JavaScript in general.
 
 ## Workshop contents
 
