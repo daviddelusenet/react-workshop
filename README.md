@@ -35,6 +35,12 @@ React has a lot of advantages but also some disadvantages. Let's go through some
   As mentioned before, React uses JSX and ES6. This isn't mandatory tho. If you don't want to use JSX then don't. The same goes for ES6 since there's also a ES5 version of React.
 
   Besides all of this, React uses a lot of navite JavaScript functionality. So that means when you're getting better with React you're also getting better with JavaScript in general.
+  
+- **React can update the DOM fast because of the Virtual DOM**
+
+  Normally when you update an element in the DOM all parent elements also need to be updated. This is just how the DOM works. To understand this concept better you can read [this](https://developer.mozilla.org/en-US/docs/Introduction_to_Layout_in_Mozilla) and [this](http://taligarsiel.com/Projects/howbrowserswork1.htm#Parsing_general). In complex (big) applications this approach can become slow since a lot of nodes need to be updated when changing a deeply nested element.
+
+  React solves this issue by using the Virtual DOM to update the DOM. The Virtual DOM is a copy of the DOM which React uses to compare to the *normal* DOM. When something in a React component is changed the component will be marked *dirty*. This will trigger the update part of the component lifecycle which eventually will update the Virtual DOM. When this is done, the Virtual DOM gets compared to the DOM and the *normal* DOM will copy all the changes to the Virtual DOM.
 
 ## Workshop contents
 
