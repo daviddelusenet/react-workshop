@@ -1,4 +1,16 @@
-# react-workshop
+# React workshop
+
+This workshop is meant for people with (almost) no previous React experience. Before diving into the examples first please read the text below.
+
+## Introduction into the React galaxy
+
+React's website describes React as '*A JavaScript library for building user interfaces*'. With React it's possible to develop JavaScript web applications really fast. 
+
+React is component based and uses the [JSX](https://jsx.github.io/) language to define them. Also it uses ES6 which you need to compile back to ES5 when you want to use your code in a production environment.
+
+React has a lot of advantages but also some disadvantages. Let’s go through some of the advantages first.
+
+## Workshop contents
 
 - **Example 1:** *Hello World*
 
