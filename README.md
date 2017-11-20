@@ -12,7 +12,11 @@ With React it's possible to develop JavaScript web applications really fast.
 
 React is component based and uses the [JSX](https://jsx.github.io/) language to define these components. Also it uses ES6 which you need to compile back to ES5 when you want to use your code in a production environment.
 
-React has a lot of advantages but also some disadvantages. Let’s go through some of the advantages first.
+All in all, React is **really powerfull** library.
+
+## React advantages
+
+React has a lot of advantages but also some disadvantages. Let's go through some of the advantages first.
 
 **React makes it easy to reuse code**
 
