@@ -18,9 +18,9 @@ All in all, React is **really powerfull** library.
 
 React has a lot of advantages but also some disadvantages. Let's go through some of the advantages first.
 
-**React makes it easy to reuse code**
+- **React makes it easy to reuse code**
 
-Since React is component based it's quite easy to reuse a component, especially when you use a pattern like [this](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
+  Since React is component based it's quite easy to reuse a component, especially when you use a pattern like [this](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0).
 
 **React is a open-source library**
 
