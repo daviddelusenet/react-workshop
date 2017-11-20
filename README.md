@@ -41,7 +41,13 @@ React has a lot of advantages but also some disadvantages. Let's go through some
   Normally when you update an element in the DOM all parent elements also need to be updated. This is just how the DOM works. To understand this concept better you can read [this](https://developer.mozilla.org/en-US/docs/Introduction_to_Layout_in_Mozilla) and [this](http://taligarsiel.com/Projects/howbrowserswork1.htm#Parsing_general). In complex (big) applications this approach can become slow since a lot of nodes need to be updated when changing a deeply nested element.
 
   React solves this issue by using the Virtual DOM to update the DOM. The Virtual DOM is a copy of the DOM which React uses to compare to the *normal* DOM. When something in a React component is changed the component will be marked *dirty*. This will trigger the update part of the component lifecycle which eventually will update the Virtual DOM. When this is done, the Virtual DOM gets compared to the DOM and the *normal* DOM will copy all the changes to the Virtual DOM.
+  
+- **React gives you a lot of freedom**
 
+  In React you have a lot of possibilities on how to do things. Ofcourse React has best practices but doesn't force these on you. 
+
+  Also there are a lot of tools which extend/improve React functionality. You can pick the ones you like and ignore the ones you don't like.
+  
 ## React disadvantages
 
 As mentioned before, React also has some disadvantages. Let's take a closer look at some of them.
