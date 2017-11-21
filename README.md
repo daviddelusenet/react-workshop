@@ -64,11 +64,11 @@ As mentioned before, React also has some disadvantages. Let's take a closer look
 
 - **High pace of development**
 
- React is still a project under development. This means as a developer working with React you have to keep yourself up to date with the latest changes to the React codebase. 
+  React is still a project under development. This means as a developer working with React you have to keep yourself up to date with the latest changes to the React codebase. 
  
- Besides the constantly evolving React codebase a lot of the tools you will use in combination with React (like [React Router](https://github.com/ReactTraining/react-router), [Redux](https://github.com/reactjs/redux) and [Webpack](https://webpack.js.org/)) are also still under development. 
+  Besides the constantly evolving React codebase a lot of the tools you will use in combination with React (like [React Router](https://github.com/ReactTraining/react-router), [Redux](https://github.com/reactjs/redux) and [Webpack](https://webpack.js.org/)) are also still under development. 
  
- So as a developer there's a lot of stuff you need to keep yourself up to date on.
+  So as a developer there's a lot of stuff you need to keep yourself up to date on.
  
 - **Not suitable for every type of project**
  
