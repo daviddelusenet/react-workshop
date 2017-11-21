@@ -10,7 +10,7 @@ React's website describes React as
 
 With React it's possible to develop JavaScript web applications *really* fast. 
 
-React is component based and uses the [JSX](https://jsx.github.io/) language to define these components. Also it uses ES6 which you need to compile back to ES5 when you want to use your code in a production environment.
+React is component based and uses the [JSX](https://jsx.github.io/) language to define these components. React also uses ES6 which you need to compile back to ES5 when you want to use your code in a production environment.
 
 All in all, React is **powerfull** library suitable for a multitude of projects.
 
