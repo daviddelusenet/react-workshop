@@ -4,13 +4,13 @@ This workshop is meant for people with (almost) no previous React experience. Be
 
 ## Introduction into the React galaxy
 
-React's website describes React as 
+[React's website](https://reactjs.org/) describes React as 
 
 > A JavaScript library for building user interfaces
 
 With React it's possible to develop JavaScript web applications *really* fast. 
 
-React is component based and uses the [JSX](https://jsx.github.io/) language to define these components. React also uses ES6 which you need to compile back to ES5 when you want to use your code in a production environment.
+React is component based and uses the [JSX](https://jsx.github.io/) language to define these components. React also uses ES6 which you need to compile back to ES5 if you want to use your code in a production environment.
 
 All in all, React is **powerfull** library suitable for a multitude of projects.
 
@@ -49,6 +49,10 @@ React has a lot of advantages but of course also some disadvantages. Let's go th
   In React you have a lot of possibilities on how to do things. Of course React has best practices but doesn't force these on you. 
 
   Also there are a lot of tools which extend/improve React functionality. You can pick the ones you like and ignore the ones you don't like.
+  
+- **You can also develop mobile applications with React Native**
+
+  With [React Native](https://facebook.github.io/react-native/) it's possible to develop mobile applications with React. These aren't hybrid apps or web apps, they're the real deal.
   
 These are not all of the advantages React has to offer. If you would like to read more about why React is awesome check out the following articles:
 
