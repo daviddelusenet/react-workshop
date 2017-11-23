@@ -99,7 +99,7 @@ To start with an example follow to following steps:
 - After the installation is done run `npm run start`
 - If you navigate to http://localhost:3000 you should see your demo up and running!
 
-**List of examples and extra information**
+Now you know how to start up an example you can find a list of all examples and additional sources below.
 
 - **Example 1:** *Hello World*
 
