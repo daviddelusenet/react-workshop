@@ -1,6 +1,6 @@
 # React workshop
 
-This workshop is meant for people with (almost) no previous React experience. Before diving into the examples please first read the information below.
+This workshop is meant for people with (almost) no previous React experience. Before diving into the examples please first carefully read the information below.
 
 ## Introduction into the React galaxy
 
@@ -8,9 +8,9 @@ This workshop is meant for people with (almost) no previous React experience. Be
 
 > A JavaScript library for building user interfaces
 
-With React it's possible to develop JavaScript web applications *really* fast. 
+With React it's possible to develop JavaScript web applications *really* fast. Reacts best use case is a [single page application](https://en.wikipedia.org/wiki/Single-page_application) with a lot of user input/changing data. This is where React really shines.
 
-React is component based and uses the [JSX](https://jsx.github.io/) language to define these components. React also uses ES6 which you need to compile back to ES5 if you want to use your code in a production environment.
+React is component based and most people use the [JSX](https://jsx.github.io/) language to define these components. Most people also use the ES6 version of React. Of course you need to compile this code back to ES5 if you want to use it in a production environment.
 
 All in all, React is **powerfull** library suitable for a multitude of projects.
 
@@ -24,23 +24,23 @@ React has a lot of advantages but of course also some disadvantages. Let's go th
 
 - **React is a open-source library**
 
-  Open-source projects have a lot of benefits. For example, it's easier for the community to build additional tools. Also the quality of the projects code itself will be better since there are a lot of contributors working on the project.
+  Open-source projects have a lot of benefits. For example, it's easier for the community to build additional tools. Also the quality of the project code itself will be better since there are a lot of contributors working on the project.
   
   If you would like to read more about open-source software in general you can read [this](https://opensource.com/article/17/8/enterprise-open-source-advantages) and [this](https://www.zivtech.com/blog/benefits-open-source-software).
 
 - **React has a big community**
 
-  React is the most popular JavaScript library of its kind at the moment. This means the React community is really big which leads to a lot of questions/tutorials/examples online. When you encounter a problem during your development process you can probably find the answer to your problem on Stack Overflow or somewhere else on the internet.
+  At the moment React is the most popular JavaScript library of its kind. This means the React community is really big which leads to a lot of questions/tutorials/examples online. When you encounter a problem during your development process you can probably find the answer to your problem on Stack Overflow or somewhere else on the internet.
 
-- **React uses a lot of JavaScript techniques but doesn't force you to use it aswell**
+- **React uses a lot of JavaScript techniques but doesn't force you to use them aswell**
 
   As mentioned before, React uses JSX and ES6. Using these techniques isn't mandatory though. If you don't want to use JSX then don't. The same goes for ES6 since there's also a ES5 version of React.
 
-  Besides all of this, React also uses a lot of navite JavaScript functionality to get things done. So that means when you're learning React you're also becoming a better JavaScript developer in general.
+  Besides all of this, React also uses a lot of native JavaScript functionality to get things done. So that means when you're learning React you're also becoming a better JavaScript developer in general.
   
 - **React can update the DOM fast because of the Virtual DOM**
 
-  Normally when you update an element in the DOM all parent elements also need to be updated. This is just how the DOM works. To understand this concept better you can read [this](https://developer.mozilla.org/en-US/docs/Introduction_to_Layout_in_Mozilla) and [this](http://taligarsiel.com/Projects/howbrowserswork1.htm#Parsing_general). In complex (big) applications this approach can become slow since a lot of nodes need to be updated when changing a deeply nested element.
+  Normally when you update an element in the DOM all parent elements also need to be updated. This is just how the DOM works. If you want to understand this concept better you could read [this](https://developer.mozilla.org/en-US/docs/Introduction_to_Layout_in_Mozilla) and [this](http://taligarsiel.com/Projects/howbrowserswork1.htm#Parsing_general). In complex applications this approach can become slow since a lot of nodes need to be updated when changing a deeply nested element.
 
   React solves this issue by using the Virtual DOM to update the DOM. The Virtual DOM is a copy of the DOM which React uses to compare to the *normal* DOM. When something in a React component is changed the component will be marked *dirty*. This will trigger the update part of the component lifecycle which eventually will update the Virtual DOM. When this is done, the Virtual DOM gets compared to the DOM and the *normal* DOM will copy all the changes to the Virtual DOM.
   
@@ -48,7 +48,11 @@ React has a lot of advantages but of course also some disadvantages. Let's go th
 
   In React you have a lot of possibilities on how to do things. Of course React has best practices but doesn't force these on you. 
 
-  Also there are a lot of tools which extend/improve React functionality. You can pick the ones you like and ignore the ones you don't like.
+  Also there are a lot of tools which extend/improve React functionality. You can pick the ones you like and (in most cases) ignore the ones you don't like.
+  
+- **There are entire project structures based on the usage of React**
+
+  Since a React project behaves way different then your average project your project structure will probably also be different. Luckily for us there were already people thinking of ways on how to structure a complex React project, like [this one](https://medium.com/@alexmngn/how-to-better-organize-your-react-applications-2fd3ea1920f1).
   
 - **You can also develop mobile applications with React Native**
 
@@ -82,7 +86,7 @@ As mentioned before, React also has some disadvantages. Let's take a closer look
   
 - **Learning curve can be steep**
 
-  When you don't have a lot of previous experience with JavaScript, Webpack and/or ES6 features it might be hard to get into React.
+  When you don't have a lot of previous experience with Webpack, JavaScript and/or ES6 features it might be hard to get into React.
   
 Now that you know some of the advantages and disadvantages of React **let's get coding!**
 
