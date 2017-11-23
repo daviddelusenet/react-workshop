@@ -92,6 +92,15 @@ Now that you know some of the advantages and disadvantages of React **let's get 
 
 ## Workshop contents
 
+To start with an example follow to following steps:
+
+- Navigate to the corresponding folder in your terminal
+- Run the `npm i` command
+- After the installation is done run `npm run start`
+- If you navigate to http://localhost:3000 you should see your demo up and running!
+
+**List of examples and extra information**
+
 - **Example 1:** *Hello World*
 
   - https://reactjs.org/docs/hello-world.html
