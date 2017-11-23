@@ -139,3 +139,7 @@ To start with an example follow to following steps:
 
   - https://www.styled-components.com/docs
   - https://www.youtube.com/watch?v=bIK2NwoK9xk
+  
+___ 
+
+*Written by David de Lusenet*
